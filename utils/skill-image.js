@@ -72,6 +72,8 @@ import vuetifyjs from '/public/svg/skills/vuetifyjs.svg';
 import webix from '/public/svg/skills/webix.svg';
 import wolframalpha from '/public/svg/skills/wolframalpha.svg';
 import wordpress from '/public/svg/skills/wordpress.svg';
+import shopify from '/public/svg/skills/shopify.svg';
+import kubernetes from '/public/svg/skills/kubernetes.svg';
 
 
 export const skillsImage = (skill) => {
@@ -225,6 +227,10 @@ export const skillsImage = (skill) => {
       return wolframalpha;
     case 'canva':
       return canva;
+    case 'shopify':
+      return shopify;
+    case 'kubernetes':
+      return kubernetes;
     default:
       break;
   }

@@ -37,3 +37,13 @@ body {
   // padding-top: calc(var(--index) * 2.5rem);
   top: calc(var(--index) * 4rem);
 }
+
+.project-image {
+  object-fit: contain;
+  height: 100%;
+}
+
+ul.project-roles {
+  list-style-image: url(/svg/checkmark.svg);
+  list-style-position: inside;
+}

@@ -12,27 +12,15 @@ function ContactWithoutCaptcha() {
     email: '',
     message: '',
   });
-  const [error, setError] = useState({
-    email: false,
-    required: false,
-  });
 
-  const checkRequired = () => {
-    if (input.email && input.message && input.name) {
-      setError({ ...error, required: false });
-    }
+  const isFormValid = () => {
+    return isValidEmail(input.email) && input.name.length > 0 && input.email.length > 0 && input.message.length > 0;
   };
 
   const handleSendMail = async (e) => {
     e.preventDefault();
-    if (!input.email || !input.message || !input.name) {
-      setError({ ...error, required: true });
+    if (!isFormValid())
       return;
-    } else if (error.email) {
-      return;
-    } else {
-      setError({ ...error, required: false });
-    };
 
     const serviceID = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID;
     const templateID = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID;
@@ -72,7 +60,6 @@ function ContactWithoutCaptcha() {
               maxLength="100"
               required={true}
               onChange={(e) => setInput({ ...input, name: e.target.value })}
-              onBlur={checkRequired}
               value={input.name}
             />
           </div>
@@ -86,14 +73,7 @@ function ContactWithoutCaptcha() {
               required={true}
               value={input.email}
               onChange={(e) => setInput({ ...input, email: e.target.value })}
-              onBlur={() => {
-                checkRequired();
-                setError({ ...error, email: !isValidEmail(input.email) });
-              }}
             />
-            {error.email &&
-              <p className="text-sm text-red-400">Please provide a valid email!</p>
-            }
           </div>
 
           <div className="flex flex-col gap-2">
@@ -104,21 +84,16 @@ function ContactWithoutCaptcha() {
               name="message"
               required={true}
               onChange={(e) => setInput({ ...input, message: e.target.value })}
-              onBlur={checkRequired}
               rows="4"
               value={input.message}
             />
           </div>
           <div className="flex flex-col items-center gap-2">
-            {error.required &&
-              <p className="text-sm text-red-400">
-                Email and Message are required!
-              </p>
-            }
             <button
-              className="flex items-center gap-1 hover:gap-3 rounded-full bg-gradient-to-r from-pink-500 to-violet-600 px-5 md:px-12 py-2.5 md:py-3 text-center text-xs md:text-sm font-medium uppercase tracking-wider text-white no-underline transition-all duration-200 ease-out hover:text-white hover:no-underline md:font-semibold"
+              className="flex items-center gap-1 hover:gap-3 rounded-full bg-gradient-to-r from-pink-500 to-violet-600 px-5 md:px-12 py-2.5 md:py-3 text-center text-xs md:text-sm font-medium uppercase tracking-wider text-white no-underline transition-all duration-200 ease-out hover:text-white hover:no-underline md:font-semibold disabled:from-gray-500 disabled:to-gray-800"
               role="button"
               onClick={handleSendMail}
+              disabled={!isFormValid()}
             >
               <span>Send Message</span>
               <TbMailForward className="mt-1" size={18} />

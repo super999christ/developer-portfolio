@@ -9,7 +9,7 @@ import lottieFile from '/public/lottie/study.json';
 
 function Education() {
   return (
-    <div id="education" className="relative z-50 border-t my-12 lg:my-24 border-[#25213b]">
+    <div id="education" className="relative border-t my-12 lg:my-24 border-[#25213b]">
       <Image
         src="/section.svg"
         alt="Hero"
@@ -33,7 +33,7 @@ function Education() {
         </div>
       </div>
 
-      <div className="py-8">
+      <div className="py-2">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16">
           <div className="flex justify-center items-start">
             <div className="w-3/4 h-3/4">
@@ -64,7 +64,7 @@ function Education() {
                           <BsPersonWorkspace size={36} />
                         </div>
                         <div>
-                          <p className="text-base sm:text-xl mb-2 font-medium uppercase">
+                          <p className="text-base sm:text-xl mb-2 font-medium">
                             {education.title}
                           </p>
                           <p className="text-sm sm:text-base">{education.institution}</p>
