@@ -6,26 +6,31 @@ export const projectsData = [
     },
     {
         id: 2,
+        name: 'UserHub',
+        url: 'https://userhub.com'
+    },
+    {
+        id: 3,
         name: 'OrderProtection - eCommerce',
         url: 'https://orderprotection.com'
     },
     {
-        id: 3,
+        id: 4,
         name: 'Electric Charging Station',
         url: 'https://nxuenergy.com'
     },
     {
-        id: 4,
+        id: 5,
         name: 'All Things Pickleball',
         url: 'https://pickleball.com'
     },
     {
-        id: 5,
+        id: 6,
         name: 'Real Estate - Guarantors',
         url: 'https://theguarantors.com'
     },
     {
-        id: 6,
+        id: 7,
         name: 'AI Medical Automation',
         url: 'https://marianaai.com'
     }

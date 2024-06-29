@@ -1,6 +1,7 @@
 // @flow strict
 import * as React from 'react';
 import ProCareflow from './ProCareflow';
+import ProUserhub from './ProUserhub';
 import ProChargingStation from './ProChargingStation';
 import ProPickleball from './ProPickleball';
 import ProGuarantors from './ProGuarantors';
@@ -27,11 +28,12 @@ function ProjectCard({ project }) {
       <div className="overflow-hidden border-t-[2px] border-indigo-900 px-4 lg:px-8 py-4 lg:py-8">
         <div className='max-h-[350px] overflow-y-auto'>
         {project.id === 1 && <ProCareflow />}
-        {project.id === 2 && <ProOrderProtection />}
-        {project.id === 3 && <ProChargingStation />}
-        {project.id === 4 && <ProPickleball />}
-        {project.id === 5 && <ProGuarantors />}
-        {project.id === 6 && <ProMariana />}
+        {project.id === 2 && <ProUserhub />}
+        {project.id === 3 && <ProOrderProtection />}
+        {project.id === 4 && <ProChargingStation />}
+        {project.id === 5 && <ProPickleball />}
+        {project.id === 6 && <ProGuarantors />}
+        {project.id === 7 && <ProMariana />}
         </div>
       </div>
     </div>
