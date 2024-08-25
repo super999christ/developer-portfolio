@@ -11,10 +11,10 @@ export default function Promariana() {
         This platform seamlessly integrates with your existing electronic health record (EHR) system to automate and augment clinical encounters, ensuring no effort or revenue is wasted.CARE's key features include a multilingual AI medical scribe that transcribes conversations with 95% accuracy, autonomous medical coding that generates audited codes with over 92% accuracy, and a patient communication assistance that triages messages and automates responses, keeping your inbox always at zero.
 			</div>
 			<div className="flex flex-wrap gap-4 mt-4">
-				<ModalImage src={Screenshot1} className='project-image' />
-				<ModalImage src={Screenshot2} className='project-image' />
-				<ModalImage src={Screenshot3} className='project-image' />
-        <ModalImage src={Screenshot4} className='project-image' />
+				<ModalImage src={Screenshot1} />
+				<ModalImage src={Screenshot2} />
+				<ModalImage src={Screenshot3} />
+        <ModalImage src={Screenshot4} />
 			</div>
 			<div className='mt-4'>
 				<ul className='project-roles'>

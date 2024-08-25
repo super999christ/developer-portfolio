@@ -13,12 +13,12 @@ export default function ProChargingStation() {
         NxuOne™ app is an easy-to-use app that provides access to our DC fast charging stations when you are on the go. Use our app to seamlessly start and stop sessions, see real time charging metrics and ensure secure payment processing.
 			</div>
 			<div className="flex flex-wrap gap-4 mt-4">
-				<ModalImage src={Screenshot1} className='project-image' />
-				<ModalImage src={Screenshot2} className='project-image' />
-				<ModalImage src={Screenshot3} className='project-image' />
-        <ModalImage src={Screenshot4} className='project-image' />
-				<ModalImage src={Screenshot5} className='project-image' />
-				<ModalImage src={Screenshot6} className='project-image' />
+				<ModalImage src={Screenshot1} />
+				<ModalImage src={Screenshot2} />
+				<ModalImage src={Screenshot3} />
+        <ModalImage src={Screenshot4} />
+				<ModalImage src={Screenshot5} />
+				<ModalImage src={Screenshot6} />
 			</div>
 			<div className='mt-4'>
 				<ul className='project-roles'>

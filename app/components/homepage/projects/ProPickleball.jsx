@@ -12,11 +12,11 @@ export default function ProPickleball() {
         Pickleball is a comprehensive platform dedicated to the sport of pickleball, serving as a one-stop destination for all things related to the game. The website features a wide range of content, including news, tournament results, league information, player rankings, and various resources for pickleball enthusiasts.
 			</div>
 			<div className="flex flex-wrap gap-4 mt-4">
-				<ModalImage src={Screenshot1} className='project-image' />
-				<ModalImage src={Screenshot2} className='project-image' />
-				<ModalImage src={Screenshot3} className='project-image' />
-        <ModalImage src={Screenshot4} className='project-image' />
-        <ModalImage src={Screenshot5} className='project-image' />
+				<ModalImage src={Screenshot1} />
+				<ModalImage src={Screenshot2} />
+				<ModalImage src={Screenshot3} />
+        <ModalImage src={Screenshot4} />
+        <ModalImage src={Screenshot5} />
 			</div>
 			<div className='mt-4'>
 				<ul className='project-roles'>

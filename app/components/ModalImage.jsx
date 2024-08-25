@@ -3,7 +3,7 @@
 import Image from "next/image"
 import { useState } from "react";
 
-export default function ModalImage({ src, title, subtitle }) {
+export default function ModalImage({ src, maxWidth }) {
   const [isOpen, setOpen] = useState(false);
   
   const onImageClick = () => {
@@ -14,7 +14,7 @@ export default function ModalImage({ src, title, subtitle }) {
     <>
       <Image
         src={src}
-        className="project-image cursor-pointer"
+        className={`project-image cursor-pointer ${maxWidth && 'sm:max-w-[600px] lg:max-w-[900px]'}`}
         onClick={onImageClick}
         alt="Project Screenshot"
       />

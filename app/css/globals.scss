@@ -47,3 +47,8 @@ ul.project-roles {
   list-style-image: url(/svg/checkmark.svg);
   list-style-position: inside;
 }
+
+.backdrop-blur-5 {
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+}

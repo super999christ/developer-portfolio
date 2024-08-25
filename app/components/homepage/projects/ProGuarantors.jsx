@@ -10,9 +10,9 @@ export default function ProGuarantors() {
         TheGuarantors provides innovative insurance products that facilitate lease approvals, streamline security deposit management, and offer comprehensive renter's insurance - all with the goal of creating a more accessible and secure rental experience. This seamlessly connects renters, owners, and operators, enabling more individuals to access their dream living spaces while mitigating risks for property owners.
 			</div>
 			<div className="flex flex-wrap gap-4 mt-4">
-				<ModalImage src={Screenshot1} className='project-image' />
-				<ModalImage src={Screenshot2} className='project-image' />
-				<ModalImage src={Screenshot3} className='project-image' />
+				<ModalImage src={Screenshot1} />
+				<ModalImage src={Screenshot2} />
+				<ModalImage src={Screenshot3} />
 			</div>
 			<div className='mt-4'>
 				<ul className='project-roles'>

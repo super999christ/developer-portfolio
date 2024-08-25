@@ -13,12 +13,12 @@ export default function ProCareflow() {
         Healthcare platform that enables organizations to build, operate, and monitor digital care pathways, patient onboarding, and clinical workflows. This provides a user-friendly, drag-and-drop interface, pre-built integrations, and real-time analytics to help healthcare teams improve clinical and operational efficiency, reduce errors, and drive better patient outcomes.
 			</div>
 			<div className="flex flex-wrap gap-4 mt-4">
-				<ModalImage src={Screenshot1} className='project-image' />
-				<ModalImage src={Screenshot2} className='project-image' />
-				<ModalImage src={Screenshot3} className='project-image' />
-        <ModalImage src={Screenshot4} className='project-image' />
-				<ModalImage src={Screenshot5} className='project-image' />
-				<ModalImage src={Screenshot6} className='project-image' />
+				<ModalImage src={Screenshot1} />
+				<ModalImage src={Screenshot2} />
+				<ModalImage src={Screenshot3} />
+        <ModalImage src={Screenshot4} />
+				<ModalImage src={Screenshot5} />
+				<ModalImage src={Screenshot6} />
 			</div>
 			<div className='mt-4'>
 				<ul className='project-roles'>
