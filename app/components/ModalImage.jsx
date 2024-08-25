@@ -1,7 +1,7 @@
 'use client'
 
 import Image from "next/image"
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 export default function ModalImage({ src, maxWidth }) {
   const [isOpen, setOpen] = useState(false);
@@ -9,6 +9,24 @@ export default function ModalImage({ src, maxWidth }) {
   const onImageClick = () => {
     setOpen(!isOpen);
   };
+
+  useEffect(() => {
+    const handleEscapeKey = (event) => {
+      if (event.key === 'Escape') {
+        setOpen(false);
+      }
+    };
+
+    if (isOpen) {
+      document.addEventListener('keydown', handleEscapeKey);
+    } else {
+      document.removeEventListener('keydown', handleEscapeKey);
+    }
+
+    return () => {
+      document.removeEventListener('keydown', handleEscapeKey);
+    };
+  }, [isOpen]);
 
   return (
     <>
