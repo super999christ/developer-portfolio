@@ -5,6 +5,6 @@ import AnimationLottie from '../helper/animation-lottie';
 
 export default function ArtisanHero() {
   return (
-    <AnimationLottie animationPath={artisanLottie} shouldShowLoading={true} />
+    <AnimationLottie animationPath={artisanLottie} shouldShowLoading={true} width={"100%"} height={"100%"} />
   )
 };
