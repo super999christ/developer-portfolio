@@ -2,8 +2,9 @@
 
 import Image from "next/image"
 import { useEffect, useState } from "react";
+import ArtisanHero from "./animations/ArtisanHero";
 
-export default function ModalImage({ src, maxWidth }) {
+export default function ModalImage({ src, maxWidth, lottieAnimation }) {
   const [isOpen, setOpen] = useState(false);
   
   const onImageClick = () => {
@@ -38,11 +39,13 @@ export default function ModalImage({ src, maxWidth }) {
       />
       {isOpen && (
         <div className="flex fixed top-0 left-0 z-[50000] w-screen h-screen bg-gray-700 bg-opacity-50 justify-center items-center p-10 cursor-pointer" onClick={onImageClick}>
-          <Image
-            src={src}
-            className="project-image cursor-pointer"
-            alt="Project Screenshot"
-          />
+          {!lottieAnimation ? (
+            <Image
+              src={src}
+              className="project-image cursor-pointer"
+              alt="Project Screenshot"
+            />
+          ): <ArtisanHero />}
         </div>
       )}
     </>

@@ -1,5 +1,10 @@
 export const projectsData = [
     {
+        id: 8,
+        name: 'AI Employees - Artisans',
+        url: 'https://artisan.co'
+    },
+    {
         id: 1,
         name: 'Careflow Management',
         url: 'https://awellhealth.com'

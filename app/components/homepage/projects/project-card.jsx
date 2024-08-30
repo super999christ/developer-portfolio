@@ -1,5 +1,6 @@
 // @flow strict
 import * as React from 'react';
+import ProArtisan from './ProArtisan';
 import ProCareflow from './ProCareflow';
 import ProUserhub from './ProUserhub';
 import ProChargingStation from './ProChargingStation';
@@ -34,6 +35,7 @@ function ProjectCard({ project }) {
         {project.id === 5 && <ProPickleball />}
         {project.id === 6 && <ProGuarantors />}
         {project.id === 7 && <ProMariana />}
+        {project.id === 8 && <ProArtisan />}
         </div>
       </div>
     </div>
