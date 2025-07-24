@@ -1,8 +1,14 @@
 export const educations = [
   {
     id: 1,
-    title: "Bachelor Degree - Computer Science",
-    duration: "Jan 2013 - Dec 2018",
-    institution: "University of Alaska, Anchorage",
+    title: "Master of Science in Computer Science",
+    duration: "Apr 2012 - Mar 2014",
+    institution: "Osaka University",
+  },
+  {
+    id: 2,
+    title: "Bachelor of Science in Computer Science",
+    duration: "Apr 2008 - Mar 2012",
+    institution: "Osaka University",
   }
 ]
