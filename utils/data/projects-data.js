@@ -1,5 +1,10 @@
 export const projectsData = [
     {
+        id: 9,
+        name: 'AI for E-commerce - Envive',
+        url: 'https://envive.ai'
+    },
+    {
         id: 8,
         name: 'AI Employees - Artisans',
         url: 'https://artisan.co'

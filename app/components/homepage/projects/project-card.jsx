@@ -8,6 +8,7 @@ import ProPickleball from './ProPickleball';
 import ProGuarantors from './ProGuarantors';
 import ProMariana from './ProMariana';
 import ProOrderProtection from './ProOrderProtection';
+import ProEnvive from './ProEnvive';
 
 function ProjectCard({ project }) {
   return (
@@ -36,6 +37,7 @@ function ProjectCard({ project }) {
         {project.id === 6 && <ProGuarantors />}
         {project.id === 7 && <ProMariana />}
         {project.id === 8 && <ProArtisan />}
+        {project.id === 9 && <ProEnvive />}
         </div>
       </div>
     </div>
