@@ -3,7 +3,7 @@ export const experiences = [
     id: 1,
     title: 'Principal Software Engineer',
     company: "SutureHealth",
-    duration: "(Mar 2023 - May 2025)"
+    duration: "(Mar 2023 - Sep 2025)"
   },
   {
     id: 2,
