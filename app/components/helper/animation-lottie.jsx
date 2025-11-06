@@ -1,6 +1,11 @@
 "use client";
 
-import Lottie from "lottie-react";
+import dynamic from "next/dynamic";
+
+// Dynamically import Lottie with SSR disabled to prevent document is not defined error
+const Lottie = dynamic(() => import("lottie-react"), {
+  ssr: false,
+});
 
 const AnimationLottie = ({ animationPath, width, height }) => {
   const defaultOptions = {
