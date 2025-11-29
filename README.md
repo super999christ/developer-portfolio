@@ -116,12 +116,12 @@ export const personalData = {
   profile: "/profile.png",
   designation: "Full-Stack Software Engineer",
   description: "My name is CHASSITY NAKAMURA....",
-  email: "cchrist1210@gmail.com",
-  phone: "+14252922979",
+  email: "nakamurachassity@gmail.com",
+  phone: "+13237447096",
   address: "Tacoma, WA",
   github: "https://github.com/superdev1211",
   linkedIn: "https://www.linkedin.com/in/k-nakamura-49332a375/",
-  resume: "https://drive.google.com/file/d/1PSxIP_VOdDO6a9eMNVWOPTNSw61uNi_x/view?usp=sharing",
+  resume: "https://drive.google.com/file/d/16yJE_xddUEiZO_i9Kt1SiS3ZmE1h0xQy/view?usp=drive_link",
 };
 ```
 
