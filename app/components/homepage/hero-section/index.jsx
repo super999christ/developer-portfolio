@@ -26,7 +26,7 @@ function HeroSection() {
             Hello,
             this is {' '}
             <span className=" text-pink-500">{personalData.name}</span>
-            {` , I'm a Professional `}
+            {` , I'm a `}
             <span className=" text-[#16f2b3]">{personalData.designation}</span>
             .
           </h1>
@@ -56,11 +56,11 @@ function HeroSection() {
               </button>
             </Link>
 
-            {/* <Link className="flex items-center gap-1 hover:gap-3 rounded-full bg-gradient-to-r from-pink-500 to-violet-600 px-3 md:px-8 py-3 md:py-4 text-center text-xs md:text-sm font-medium uppercase tracking-wider text-white no-underline transition-all duration-200 ease-out hover:text-white hover:no-underline md:font-semibold" role="button" target="_blank" href={personalData.resume}
+            <Link className="flex items-center gap-1 hover:gap-3 rounded-full bg-gradient-to-r from-pink-500 to-violet-600 px-3 md:px-8 py-3 md:py-4 text-center text-xs md:text-sm font-medium uppercase tracking-wider text-white no-underline transition-all duration-200 ease-out hover:text-white hover:no-underline md:font-semibold" role="button" target="_blank" href={personalData.resume}
             >
               <span>Get Resume</span>
               <MdDownload size={16} />
-            </Link> */}
+            </Link>
           </div>
 
         </div>
@@ -87,7 +87,7 @@ function HeroSection() {
               <div>
                 <span className="ml-4 lg:ml-8 mr-2 text-white">name:</span>
                 <span className="text-gray-400">{`'`}</span>
-                <span className="text-amber-300">Chassity Nakamura</span>
+                <span className="text-amber-300">{personalData.name}</span>
                 <span className="text-gray-400">{`',`}</span>
               </div>
               <div className="ml-4 lg:ml-8 mr-2">
@@ -95,31 +95,27 @@ function HeroSection() {
                 <span className="text-gray-400">{`['`}</span>
                 <span className="text-amber-300">React</span>
                 <span className="text-gray-400">{"', '"}</span>
-                <span className="text-amber-300">Node.js</span>
+                <span className="text-amber-300">Next.js</span>
                 <span className="text-gray-400">{"', '"}</span>
                 <span className="text-amber-300">TypeScript</span>
                 <span className="text-gray-400">{"', '"}</span>
                 <span className="text-amber-300">Python</span>
                 <span className="text-gray-400">{"', '"}</span>
-                <span className="text-amber-300">NextJS</span>
+                <span className="text-amber-300">Node.js</span>
                 <span className="text-gray-400">{"', '"}</span>
-                <span className="text-amber-300">Django</span>
-                <span className="text-gray-400">{"', '"}</span>
-                <span className="text-amber-300">MongoDB</span>
+                <span className="text-amber-300">FastAPI</span>
                 <span className="text-gray-400">{"', '"}</span>
                 <span className="text-amber-300">PostgreSQL</span>
                 <span className="text-gray-400">{"', '"}</span>
-                <span className="text-amber-300">InfluxDB</span>
-                <span className="text-gray-400">{"', '"}</span>
                 <span className="text-amber-300">Docker</span>
                 <span className="text-gray-400">{"', '"}</span>
-                <span className="text-amber-300">GCP / AWS</span>
+                <span className="text-amber-300">Kubernetes</span>
                 <span className="text-gray-400">{"', '"}</span>
-                <span className="text-amber-300">Shopify</span>
+                <span className="text-amber-300">AWS / GCP</span>
                 <span className="text-gray-400">{"', '"}</span>
-                <span className="text-amber-300">Kafka</span>
+                <span className="text-amber-300">AI Agents</span>
                 <span className="text-gray-400">{"', '"}</span>
-                <span className="text-amber-300">LangChain</span>
+                <span className="text-amber-300">LLM Applications</span>
                 <span className="text-gray-400">{"'],"}</span>
               </div>
               <div>

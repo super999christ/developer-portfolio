@@ -9,8 +9,8 @@ import './css/globals.scss';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata = {
-  title: 'Portfolio of Chassity Nakamura - Software Engineer',
-  description: 'This is the portfolio of Chassity Nakamura. I am a full stack developer and a self taught developer. I love to learn new things and I am always open to collaborating with others. I am a quick learner and I am always looking for new challenges.',
+  title: 'Portfolio of Chassity Nakamura - Senior Product Engineer',
+  description: 'Portfolio of Chassity Nakamura, Senior Product Engineer with 12+ years of experience building customer-facing products, cloud-native platforms, and AI-enabled workflows across fintech, healthcare, e-commerce, and machine learning.',
 };
 
 export default function RootLayout({ children }) {
